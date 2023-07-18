@@ -40,7 +40,7 @@ monitors:
     expectStatus: 200
     linkable: true
 
-    - id: tusemana-com
+  - id: tusemana-com
     name: TuSemana
     url: 'https://tusemana.com'
     method: GET

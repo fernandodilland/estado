@@ -1,18 +1,18 @@
 settings:
-  title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  title: 'Página de estado'
+  url: 'https://status.fernandodilland.com/' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  allmonitorsOperational: 'Todos los sistemas se encuentran trabajando'
+  notAllmonitorsOperational: 'No todos los sistemas están trabajando'
+  monitorLabelOperational: 'Trabajando'
+  monitorLabelNotOperational: 'Sin trabajar'
+  monitorLabelNoData: 'Sin datos'
+  dayInHistogramNoData: 'Sin datos'
+  dayInHistogramOperational: 'Todo en orden'
+  dayInHistogramNotOperational: ' incidente(s)' # xx incident(s) recorded
 
 monitors:
   - id: workers-cloudflare-com # unique identifier
@@ -32,8 +32,8 @@ monitors:
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: fractory-mx
+    name: Fractory
+    url: 'https://fractory.mx/'
     method: GET
     expectStatus: 200

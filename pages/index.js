@@ -90,7 +90,7 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
         })}
         <div className="flex flex-row justify-between mt-4 text-sm">
           <div>
-            Sistema realziado por Fernando Dilland.
+            Sistema creado por Fernando Dilland.
             
           </div>
         </div>

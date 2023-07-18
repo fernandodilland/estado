@@ -24,16 +24,25 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
+  - id: cloudflare-com
+    name: cloudflare.com
     description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+    url: 'https://cloudflare.com'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
   - id: fractory-mx
     name: Fractory
-    url: 'https://fractory.mx/'
+    description: 'Fábrica digital de diseño.'
+    url: 'https://fractory.mx'
     method: GET
     expectStatus: 200
+    linkable: true
+
+    - id: tusemana-com
+    name: TuSemana
+    url: 'https://tusemana.com'
+    method: GET
+    expectStatus: 200
+    linkable: true

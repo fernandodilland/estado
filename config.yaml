@@ -15,6 +15,13 @@ settings:
   dayInHistogramNotOperational: ' incidente(s)' # xx incident(s) recorded
 
 monitors:
+  - id: fernandodilland-com
+    name: Página web de Fernando Dilland
+    url: 'https://fernandodilland.com/'
+    method: GET
+    expectStatus: 200
+    linkable: true
+
   - id: webmail-correos
     name: Correos electrónicos (Webmail Frontend)
     url: 'https://mail.ionos.mx/'
@@ -47,16 +54,24 @@ monitors:
     linkable: true # allows the title to be a link, default=true
 
   - id: fractory-mx
-    name: Fractory
+    name: Fractory - Diseño de páginas web en 48 horas
     description: 'Fábrica digital de diseño.'
     url: 'https://fractory.mx'
     method: GET
     expectStatus: 200
     linkable: true
 
+  - id: fractory-tusemana-com
+    name: Login del CRM de Fractory (TuSemana) usando Cloudflare Access
+    description: 'Fábrica digital de diseño.'
+    url: 'https://fractory.tusemana.com'
+    method: GET
+    expectStatus: 302
+    linkable: false
+
   - id: tusemana-com
-    name: TuSemana
-    url: 'https://tusemana.com'
+    name: TuSemana - Plataforma Online para la Gestión de Clientes
+    url: 'https://www.tusemana.com'
     method: GET
     expectStatus: 200
     linkable: true

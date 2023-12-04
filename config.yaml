@@ -27,14 +27,14 @@ monitors:
     url: 'https://id.ionos.mx/'
     method: GET
     expectStatus: 200
-    linkable: true
+    linkable: false
 
   - id: status-ionos
     name: WordPress y Correos electrónicos (Servidor)
     url: 'https://www.ionos-status.mx/'
     method: GET
     expectStatus: 200
-    linkable: true
+    linkable: false
 
   - id: workers-cloudflare-com # unique identifier
     name: workers.cloudflare.com
@@ -51,7 +51,7 @@ monitors:
     url: 'https://www.cloudflare.com'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true
 
   - id: fractory-mx
     name: Fractory - Diseño de páginas web en 48 horas
@@ -59,4 +59,4 @@ monitors:
     url: 'https://fractory.mx'
     method: GET
     expectStatus: 200
-    linkable: true
+    linkable: false

@@ -22,13 +22,6 @@ monitors:
     expectStatus: 200
     linkable: true
 
-  - id: webmail-correos
-    name: Correos electrónicos (Webmail Frontend)
-    url: 'https://id.ionos.mx/'
-    method: GET
-    expectStatus: 200
-    linkable: false
-
   - id: status-ionos
     name: WordPress y Correos electrónicos (Servidor)
     url: 'https://www.ionos-status.mx/'

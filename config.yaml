@@ -45,11 +45,3 @@ monitors:
     method: GET
     expectStatus: 200
     linkable: false # allows the title to be a link, default=true
-
-  - id: fractory-mx
-    name: Fractory - Diseño de páginas web en 48 horas
-    description: 'Fábrica digital de diseño.'
-    url: 'https://fractory.mx'
-    method: GET
-    expectStatus: 200
-    linkable: false
